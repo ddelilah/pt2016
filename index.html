@@ -96,6 +96,101 @@
        return "fail";
    }</code></p></li>
 </ul>
+
+<h3>
+<a id="barem-tema-1" class="anchor" href="#barem-tema-1" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Barem Tema 1</h3>
+
+<p>Requirement: Propose, design and implement a system for polynomial processing. Consider the polynomials of one variable and integer coefficients.</p>
+
+<ul>
+<li>documentatie - 2p</li>
+<li>interfata grafica - 1p</li>
+<li>adunare - 1p</li>
+<li>scadere - 1p</li>
+<li>inmultire - 1.5p</li>
+<li>impartire - 1.5p</li>
+<li>integrare si derivare / graficul functiei / calculul radacinilor- 2p</li>
+</ul>
+
+<h3>
+<a id="clean-code-conventions" class="anchor" href="#clean-code-conventions" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Clean code conventions</h3>
+
+<p>"Always code as if the guy who ends up maintaining your code will be a violent psychopath who knows where you live. Code for readability."</p>
+
+<p>Clean code can be achieved by </p>
+
+<ul>
+<li>meaningful names (please see ch. 9 of the recommended reading material)
+
+<ul>
+<li>pronounceable, searchable, avoid encodings</li>
+<li>intention-revealing names</li>
+</ul>
+</li>
+<li>language fundamentals (please see ch. 10.1 of the recommended reading material)
+
+<ul>
+<li>minimize the accessibility of classes and members (use encapsulation)</li>
+</ul>
+</li>
+<li>methods
+
+<ul>
+<li>small, easy to read &amp; understand</li>
+<li>do exactly one thing</li>
+<li>keep number of arguments minimal &amp; justified </li>
+</ul>
+</li>
+<li>objects &amp; data (Law of Demeter <a href="https://en.wikipedia.org/wiki/Law_of_Demeter">https://en.wikipedia.org/wiki/Law_of_Demeter</a>)
+
+<ul>
+<li>keep the variables private when you don't want anyone to depend on them</li>
+<li>hide implementation, expose interface</li>
+<li>"talk to friends, not strangers":
+
+<ul>
+<li>a method <code>f</code> of class <code>C</code> should only call methods of:
+
+<ul>
+<li><code>C</code></li>
+<li>objects created by <code>f</code>
+</li>
+<li>objects passed as an argument of <code>f</code>
+</li>
+<li>objects held in an instance of <code>C</code>
+</li>
+</ul>
+</li>
+<li>a method should NOT invoke methods on objects that are returned by any allowed functions</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>formatting (please see ch 4, 6 and 7 of the recommended reading material)</li>
+<li>comments (please see ch. 5 of the recommended reading material)
+
+<ul>
+<li>explain your intend, but avoid noisy or redundant comments</li>
+</ul>
+</li>
+<li>exceptions &amp; error handling
+
+<ul>
+<li>have a clear separation between error handling and business logic (define a normal flow and the exceptional flows)</li>
+<li>avoid returning/passing <code>null</code> in case of exceptions (difficult to handle) - thrown an exception instead</li>
+<li>provide context (informative messages) with exceptions</li>
+</ul>
+</li>
+</ul>
+
+<p>Clean code should obey the following principles:
+    * single responsibility &amp; high cohesion
+        * specialized classes/methods
+        * keep modules/elements together
+    * low coupling
+        * minimize dependencies</p>
+
+<p>Recommended reading: </p>
       </section>
 
       <footer>
